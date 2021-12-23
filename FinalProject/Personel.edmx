@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="ARACKİRALAMADBModel1.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'ARACKİRALAMADB.dbo.TBLADMİN' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="TBLADMİN">
+          <Key>
+            <PropertyRef Name="PERİD" />
+          </Key>
+          <Property Name="KULLANİCİAD" Type="varchar" MaxLength="20" />
+          <Property Name="SİFRE" Type="varchar" MaxLength="20" />
+          <Property Name="PERAD" Type="varchar" MaxLength="50" />
+          <Property Name="PERSOYAD" Type="varchar" MaxLength="50" />
+          <Property Name="PERYAS" Type="varchar" MaxLength="2" />
+          <Property Name="PERCİNSİYET" Type="varchar" MaxLength="5" />
+          <Property Name="PERMAAS" Type="varchar" MaxLength="5" />
+          <Property Name="PERGÖREV" Type="varchar" MaxLength="50" />
+          <Property Name="PERİD" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="ARACKİRALAMADBModel1StoreContainer">
+          <EntitySet Name="TBLADMİN" EntityType="Self.TBLADMİN" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [TBLADMİN].[KULLANİCİAD] AS [KULLANİCİAD], 
+    [TBLADMİN].[SİFRE] AS [SİFRE], 
+    [TBLADMİN].[PERAD] AS [PERAD], 
+    [TBLADMİN].[PERSOYAD] AS [PERSOYAD], 
+    [TBLADMİN].[PERYAS] AS [PERYAS], 
+    [TBLADMİN].[PERCİNSİYET] AS [PERCİNSİYET], 
+    [TBLADMİN].[PERMAAS] AS [PERMAAS], 
+    [TBLADMİN].[PERGÖREV] AS [PERGÖREV], 
+    [TBLADMİN].[PERİD] AS [PERİD]
+    FROM [dbo].[TBLADMİN] AS [TBLADMİN]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ARACKİRALAMADBModel1" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="TBLADMİN">
+          <Key>
+            <PropertyRef Name="PERİD" />
+          </Key>
+          <Property Name="KULLANİCİAD" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="SİFRE" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="PERAD" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="PERSOYAD" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="PERYAS" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="PERCİNSİYET" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="PERMAAS" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="PERGÖREV" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="PERİD" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityContainer Name="ARACKİRALAMADBEntities2" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="TBLADMİN" EntityType="Self.TBLADMİN" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ARACKİRALAMADBModel1StoreContainer" CdmEntityContainer="ARACKİRALAMADBEntities2">
+          <EntitySetMapping Name="TBLADMİN">
+            <EntityTypeMapping TypeName="ARACKİRALAMADBModel1.TBLADMİN">
+              <MappingFragment StoreEntitySet="TBLADMİN">
+                <ScalarProperty Name="KULLANİCİAD" ColumnName="KULLANİCİAD" />
+                <ScalarProperty Name="SİFRE" ColumnName="SİFRE" />
+                <ScalarProperty Name="PERAD" ColumnName="PERAD" />
+                <ScalarProperty Name="PERSOYAD" ColumnName="PERSOYAD" />
+                <ScalarProperty Name="PERYAS" ColumnName="PERYAS" />
+                <ScalarProperty Name="PERCİNSİYET" ColumnName="PERCİNSİYET" />
+                <ScalarProperty Name="PERMAAS" ColumnName="PERMAAS" />
+                <ScalarProperty Name="PERGÖREV" ColumnName="PERGÖREV" />
+                <ScalarProperty Name="PERİD" ColumnName="PERİD" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

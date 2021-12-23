@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="ARACKİRALAMADBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="TBLKİRALIKARAC">
+          <Key>
+            <PropertyRef Name="ARACID" />
+          </Key>
+          <Property Name="ARACID" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ARACMARKA" Type="varchar" MaxLength="50" />
+          <Property Name="ARACMODEL" Type="varchar" MaxLength="10" />
+          <Property Name="ARACRENK" Type="varchar" MaxLength="50" />
+          <Property Name="ARACYIL" Type="varchar" MaxLength="11" />
+          <Property Name="ARACMUAYENETARİH" Type="varchar" MaxLength="50" />
+          <Property Name="ARACTİP" Type="varchar" MaxLength="10" />
+          <Property Name="ARACPLAKA" Type="varchar" MaxLength="10" />
+          <Property Name="ARACVİTES" Type="varchar" MaxLength="8" />
+          <Property Name="ARACFİYAT" Type="varchar" MaxLength="10" />
+          <Property Name="DURUM" Type="bit" />
+          <Property Name="VERİLİŞTARİH" Type="varchar" MaxLength="50" />
+          <Property Name="ALIŞTARİH" Type="varchar" MaxLength="50" />
+          <Property Name="MUSTERİADSOYAD" Type="varchar" MaxLength="50" />
+          <Property Name="TC" Type="varchar" MaxLength="50" />
+          <Property Name="EHLİYETNO" Type="varchar" MaxLength="5" />
+          <Property Name="TELNO" Type="varchar" MaxLength="11" />
+          <Property Name="ARACRESİM" Type="varchar" MaxLength="100" />
+          <Property Name="ODENECEKUCRET" Type="varchar" MaxLength="6" />
+        </EntityType>
+        <EntityType Name="TBLSATILIKARAC">
+          <Key>
+            <PropertyRef Name="ARACID" />
+          </Key>
+          <Property Name="ARACID" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ARACMARKA" Type="varchar" MaxLength="50" />
+          <Property Name="ARACMODEL" Type="varchar" MaxLength="10" />
+          <Property Name="ARACRENK" Type="varchar" MaxLength="50" />
+          <Property Name="ARACYIL" Type="varchar" MaxLength="11" />
+          <Property Name="ARACDURUM" Type="varchar" MaxLength="10" />
+          <Property Name="ARACTİP" Type="varchar" MaxLength="10" />
+          <Property Name="ARACPLAKA" Type="varchar" MaxLength="10" />
+          <Property Name="ARACVİTES" Type="varchar" MaxLength="8" />
+          <Property Name="ARACFİYAT" Type="varchar" MaxLength="10" />
+          <Property Name="DURUM" Type="bit" />
+          <Property Name="SATISTARİH" Type="varchar" MaxLength="50" />
+          <Property Name="MUSTERİADSOYAD" Type="varchar" MaxLength="50" />
+          <Property Name="TC" Type="varchar" MaxLength="11" />
+          <Property Name="EHLİYETNO" Type="varchar" MaxLength="5" />
+          <Property Name="TELNO" Type="varchar" MaxLength="11" />
+          <Property Name="ARACMUAYENETARİH" Type="varchar" MaxLength="50" />
+          <Property Name="ARACRESİM" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <EntityContainer Name="ARACKİRALAMADBModelStoreContainer">
+          <EntitySet Name="TBLKİRALIKARAC" EntityType="Self.TBLKİRALIKARAC" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TBLSATILIKARAC" EntityType="Self.TBLSATILIKARAC" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ARACKİRALAMADBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="TBLKİRALIKARAC">
+          <Key>
+            <PropertyRef Name="ARACID" />
+          </Key>
+          <Property Name="ARACID" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ARACMARKA" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ARACMODEL" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="ARACRENK" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ARACYIL" Type="String" MaxLength="11" FixedLength="false" Unicode="false" />
+          <Property Name="ARACMUAYENETARİH" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ARACTİP" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="ARACPLAKA" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="ARACVİTES" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+          <Property Name="ARACFİYAT" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="DURUM" Type="Boolean" />
+          <Property Name="VERİLİŞTARİH" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="ALIŞTARİH" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="MUSTERİADSOYAD" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="TC" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="EHLİYETNO" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="TELNO" Type="String" MaxLength="11" FixedLength="false" Unicode="false" />
+          <Property Name="ARACRESİM" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="ODENECEKUCRET" Type="String" MaxLength="6" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="TBLSATILIKARAC">
+          <Key>
+            <PropertyRef Name="ARACID" />
+          </Key>
+          <Property Name="ARACID" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ARACMARKA" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ARACMODEL" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="ARACRENK" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ARACYIL" Type="String" MaxLength="11" FixedLength="false" Unicode="false" />
+          <Property Name="ARACDURUM" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="ARACTİP" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="ARACPLAKA" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="ARACVİTES" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+          <Property Name="ARACFİYAT" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="DURUM" Type="Boolean" />
+          <Property Name="SATISTARİH" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="MUSTERİADSOYAD" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="TC" Type="String" MaxLength="11" FixedLength="false" Unicode="false" />
+          <Property Name="EHLİYETNO" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="TELNO" Type="String" MaxLength="11" FixedLength="false" Unicode="false" />
+          <Property Name="ARACMUAYENETARİH" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ARACRESİM" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityContainer Name="ARACKİRALAMADBEntities1" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="TBLKİRALIKARAC" EntityType="Self.TBLKİRALIKARAC" />
+          <EntitySet Name="TBLSATILIKARAC" EntityType="Self.TBLSATILIKARAC" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ARACKİRALAMADBModelStoreContainer" CdmEntityContainer="ARACKİRALAMADBEntities1">
+          <EntitySetMapping Name="TBLKİRALIKARAC">
+            <EntityTypeMapping TypeName="ARACKİRALAMADBModel.TBLKİRALIKARAC">
+              <MappingFragment StoreEntitySet="TBLKİRALIKARAC">
+                <ScalarProperty Name="ODENECEKUCRET" ColumnName="ODENECEKUCRET" />
+                <ScalarProperty Name="ARACID" ColumnName="ARACID" />
+                <ScalarProperty Name="ARACMARKA" ColumnName="ARACMARKA" />
+                <ScalarProperty Name="ARACMODEL" ColumnName="ARACMODEL" />
+                <ScalarProperty Name="ARACRENK" ColumnName="ARACRENK" />
+                <ScalarProperty Name="ARACYIL" ColumnName="ARACYIL" />
+                <ScalarProperty Name="ARACMUAYENETARİH" ColumnName="ARACMUAYENETARİH" />
+                <ScalarProperty Name="ARACTİP" ColumnName="ARACTİP" />
+                <ScalarProperty Name="ARACPLAKA" ColumnName="ARACPLAKA" />
+                <ScalarProperty Name="ARACVİTES" ColumnName="ARACVİTES" />
+                <ScalarProperty Name="ARACFİYAT" ColumnName="ARACFİYAT" />
+                <ScalarProperty Name="DURUM" ColumnName="DURUM" />
+                <ScalarProperty Name="VERİLİŞTARİH" ColumnName="VERİLİŞTARİH" />
+                <ScalarProperty Name="ALIŞTARİH" ColumnName="ALIŞTARİH" />
+                <ScalarProperty Name="MUSTERİADSOYAD" ColumnName="MUSTERİADSOYAD" />
+                <ScalarProperty Name="TC" ColumnName="TC" />
+                <ScalarProperty Name="EHLİYETNO" ColumnName="EHLİYETNO" />
+                <ScalarProperty Name="TELNO" ColumnName="TELNO" />
+                <ScalarProperty Name="ARACRESİM" ColumnName="ARACRESİM" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TBLSATILIKARAC">
+            <EntityTypeMapping TypeName="ARACKİRALAMADBModel.TBLSATILIKARAC">
+              <MappingFragment StoreEntitySet="TBLSATILIKARAC">
+                <ScalarProperty Name="ARACID" ColumnName="ARACID" />
+                <ScalarProperty Name="ARACMARKA" ColumnName="ARACMARKA" />
+                <ScalarProperty Name="ARACMODEL" ColumnName="ARACMODEL" />
+                <ScalarProperty Name="ARACRENK" ColumnName="ARACRENK" />
+                <ScalarProperty Name="ARACYIL" ColumnName="ARACYIL" />
+                <ScalarProperty Name="ARACDURUM" ColumnName="ARACDURUM" />
+                <ScalarProperty Name="ARACTİP" ColumnName="ARACTİP" />
+                <ScalarProperty Name="ARACPLAKA" ColumnName="ARACPLAKA" />
+                <ScalarProperty Name="ARACVİTES" ColumnName="ARACVİTES" />
+                <ScalarProperty Name="ARACFİYAT" ColumnName="ARACFİYAT" />
+                <ScalarProperty Name="DURUM" ColumnName="DURUM" />
+                <ScalarProperty Name="SATISTARİH" ColumnName="SATISTARİH" />
+                <ScalarProperty Name="MUSTERİADSOYAD" ColumnName="MUSTERİADSOYAD" />
+                <ScalarProperty Name="TC" ColumnName="TC" />
+                <ScalarProperty Name="EHLİYETNO" ColumnName="EHLİYETNO" />
+                <ScalarProperty Name="TELNO" ColumnName="TELNO" />
+                <ScalarProperty Name="ARACMUAYENETARİH" ColumnName="ARACMUAYENETARİH" />
+                <ScalarProperty Name="ARACRESİM" ColumnName="ARACRESİM" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
