@@ -293,7 +293,7 @@ namespace FinalProject
             this.txtTip.Name = "txtTip";
             this.txtTip.Size = new System.Drawing.Size(200, 36);
             this.txtTip.TabIndex = 12;
-            this.txtTip.TextChanged += new System.EventHandler(this.txtTip_TextChanged);
+            //this.txtTip.TextChanged += new System.EventHandler(this.txtTip_TextChanged);
             // 
             // txtYıl
             // 
