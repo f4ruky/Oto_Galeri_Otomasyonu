@@ -79,6 +79,7 @@ namespace FinalProject
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.txtAdurum = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -532,12 +533,21 @@ namespace FinalProject
             this.label6.TabIndex = 134;
             this.label6.Text = "Araç Durumu:";
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(567, 443);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(177, 36);
+            this.comboBox1.TabIndex = 135;
+            // 
             // AracSatisİslemi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PeachPuff;
             this.ClientSize = new System.Drawing.Size(1279, 814);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.txtAdurum);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.pictureBox2);
@@ -652,5 +662,6 @@ namespace FinalProject
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.TextBox txtAdurum;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
