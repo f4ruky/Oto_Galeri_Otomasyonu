@@ -24,7 +24,7 @@ namespace FinalProject
             txtTC.Text = "";
             txtTelNo.Text = "";
             txtEhNo.Text = "";
-            txtVerilisTarih.Text = "";
+            dateTimePicker1.Text = "";
             txtid.Text = "";
             txtMarka.Text = "";
             txtModel.Text = "";
@@ -82,7 +82,7 @@ namespace FinalProject
             txtVites.Text = dataGridView1.Rows[secilen].Cells[8].Value.ToString();
             txtFiyat.Text = dataGridView1.Rows[secilen].Cells[9].Value.ToString();
             txtDurum.Text = dataGridView1.Rows[secilen].Cells[10].Value.ToString();
-            txtVerilisTarih.Text = dataGridView1.Rows[secilen].Cells[11].Value.ToString();
+            dateTimePicker1.Text = dataGridView1.Rows[secilen].Cells[11].Value.ToString();
             txtAdSoyad.Text = dataGridView1.Rows[secilen].Cells[12].Value.ToString();
             txtTC.Text = dataGridView1.Rows[secilen].Cells[13].Value.ToString();
             txtEhNo.Text = dataGridView1.Rows[secilen].Cells[14].Value.ToString();
@@ -123,7 +123,7 @@ namespace FinalProject
             int x = Convert.ToInt32(txtid.Text);
             var ktgr = db.TBLSATILIKARAC.Find(x);
             ktgr.DURUM = bool.Parse(txtDurum.Text);
-            ktgr.SATISTARİH = txtVerilisTarih.Text;
+            ktgr.SATISTARİH = dateTimePicker1.Text;
             ktgr.MUSTERİADSOYAD = txtAdSoyad.Text;
             ktgr.TC = txtTC.Text;
             ktgr.EHLİYETNO = txtEhNo.Text;
@@ -149,7 +149,7 @@ namespace FinalProject
             b.ARACPLAKA = txtPlaka.Text;
             b.ARACVİTES = txtVites.Text;
             b.ARACFİYAT = txtFiyat.Text;
-            b.SATISTARİH = txtVerilisTarih.Text;
+            b.SATISTARİH = dateTimePicker1.Text;
             b.MUSTERİADSOYAD = txtAdSoyad.Text;
             b.TC = txtTC.Text;
             b.EHLİYETNO = txtEhNo.Text;
