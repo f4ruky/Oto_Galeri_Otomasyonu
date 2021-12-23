@@ -38,10 +38,7 @@ namespace FinalProject
             txtVites.Text = "";
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-           
-        }
+        
 
         private void button3_Click_1(object sender, EventArgs e)
         {
@@ -173,6 +170,11 @@ namespace FinalProject
             openFileDialog1.ShowDialog();
             pictureBox2.ImageLocation = openFileDialog1.FileName;
             txtResim.Text = openFileDialog1.FileName;
+        }
+
+        private void AracSatisİslemi_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
