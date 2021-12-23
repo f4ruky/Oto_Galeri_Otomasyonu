@@ -79,6 +79,7 @@ namespace FinalProject
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.txtAdurum = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -416,7 +417,7 @@ namespace FinalProject
             // 
             // txtVerilisTarih
             // 
-            this.txtVerilisTarih.Location = new System.Drawing.Point(157, 266);
+            this.txtVerilisTarih.Location = new System.Drawing.Point(767, 453);
             this.txtVerilisTarih.Name = "txtVerilisTarih";
             this.txtVerilisTarih.Size = new System.Drawing.Size(200, 36);
             this.txtVerilisTarih.TabIndex = 5;
@@ -532,12 +533,20 @@ namespace FinalProject
             this.label6.TabIndex = 134;
             this.label6.Text = "Araç Durumu:";
             // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(158, 266);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 36);
+            this.dateTimePicker1.TabIndex = 135;
+            // 
             // AracSatisİslemi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PeachPuff;
             this.ClientSize = new System.Drawing.Size(1279, 814);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.txtAdurum);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.pictureBox2);
@@ -653,5 +662,6 @@ namespace FinalProject
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.TextBox txtAdurum;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }
