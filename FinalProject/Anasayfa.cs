@@ -38,8 +38,8 @@ namespace FinalProject
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            Adminİslemleri1 a1 = new Adminİslemleri1();
-            a1.Show();
+            IsletmeGiris ıg = new IsletmeGiris();
+            ıg.Show();
             this.Hide();
         }
     }

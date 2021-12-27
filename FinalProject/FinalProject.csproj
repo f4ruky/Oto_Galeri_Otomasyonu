@@ -97,6 +97,12 @@
     <Compile Include="Anasayfa.Designer.cs">
       <DependentUpon>Anasayfa.cs</DependentUpon>
     </Compile>
+    <Compile Include="IsletmeGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IsletmeGiris.Designer.cs">
+      <DependentUpon>IsletmeGiris.cs</DependentUpon>
+    </Compile>
     <Compile Include="KiralananAracListeleTeslimAl.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -195,6 +201,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Anasayfa.resx">
       <DependentUpon>Anasayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IsletmeGiris.resx">
+      <DependentUpon>IsletmeGiris.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="KiralananAracListeleTeslimAl.resx">
       <DependentUpon>KiralananAracListeleTeslimAl.cs</DependentUpon>
